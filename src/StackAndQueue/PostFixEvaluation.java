@@ -13,7 +13,7 @@ public class PostFixEvaluation {
      * **/
 
     public void evaluatePostFixExpression() {
-        Stack<Integer> s = new Stack();
+        Stack<Integer> s = new Stack<>();
         String str = "231*+9-";
         
         for(int i=0; i<str.length(); i++) {
