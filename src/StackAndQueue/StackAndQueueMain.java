@@ -1,5 +1,4 @@
 package StackAndQueue;
-import java.util.*;
 
 public class StackAndQueueMain {
     
