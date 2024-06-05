@@ -1,6 +1,9 @@
 import java.util.*;
 
 public class CustomStack {
+    
+    
+    
     /**
      * Implement 2 stacks using 1 array
      * 
@@ -38,14 +41,12 @@ public class CustomStack {
         pushToStack2(4);
         pushToStack2(3);
         pushToStack2(2);
-        // pushToStack2(1);
 
         popFromStack1();
         popFromStack1();
         popFromStack1();
         popFromStack1();
 
-        popFromStack2();
         popFromStack2();
         popFromStack2();
         popFromStack2();
@@ -93,9 +94,151 @@ public class CustomStack {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    public void evaluatePostFixExpression() {
+        Stack<Integer> s = new Stack();
+        String str = "231*+9-";
+        
+        for(int i=0; i<str.length(); i++) {
+            char c = str.charAt(i);
+            if(Character.isDigit(c)) {
+                s.push(c - '0');
+            } else {
+                int secondVal = s.pop();
+                int firstVal = s.pop();
+
+                switch(c) {
+                    case '+':
+                        s.push(firstVal + secondVal);
+                        break;
+                    case '-':
+                        s.push(firstVal - secondVal);
+                        break;
+                    case '*':
+                        s.push(firstVal * secondVal);
+                        break;
+                    case '/':
+                        s.push(firstVal / secondVal);
+                        break;
+                }
+
+            }
+        }
+
+        System.out.println(s.pop());
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
     public static void main(String args[]) throws Exception {
         CustomStack cs = new CustomStack();
-        cs.implement2StacksThrough1Array();
+        cs.evaluatePostFixExpression();
     } 
 
 }
