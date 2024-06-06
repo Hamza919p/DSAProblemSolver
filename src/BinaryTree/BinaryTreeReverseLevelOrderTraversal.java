@@ -2,8 +2,6 @@ package BinaryTree;
 
 import java.util.*;
 
-import javax.swing.tree.TreeNode;
-
 public class BinaryTreeReverseLevelOrderTraversal {
 
     public void reverse(BinaryTreeNode root) {

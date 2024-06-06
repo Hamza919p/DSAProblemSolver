@@ -2,6 +2,11 @@ package BinaryTree;
 
 public class BinaryTreeIsSubTree {
 
+    /**
+     * 
+     * USE any one `preorder, inorder, postorder`
+     * 
+     * **/
     public boolean isSubtree(BinaryTreeNode root, BinaryTreeNode subRoot) {
         String a = preOrderTraversal(root);
         String b = preOrderTraversal(subRoot);
