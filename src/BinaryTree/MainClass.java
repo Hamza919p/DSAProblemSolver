@@ -9,7 +9,8 @@ public class MainClass {
         BinaryTreeNode node = bt.createTree(a);
 
         BinaryTreeReverseLevelOrderTraversal l = new BinaryTreeReverseLevelOrderTraversal();
-        l.reverse(node);
+        // l.reverse(node);
+        System.out.println(l.preOrderTraversal(node));
 
     }
     
