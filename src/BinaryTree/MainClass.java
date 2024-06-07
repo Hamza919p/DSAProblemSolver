@@ -11,14 +11,8 @@ public class MainClass {
         bt.levelOrderTraversal(node);
 
         System.out.println();
-        
-        BinaryTreeLeftView v = new BinaryTreeLeftView();
-        ArrayList<BinaryTreeNode> l = new ArrayList();
-        v.print(node, 0, l);
-
-        for(BinaryTreeNode n : l) {
-            System.out.print(n.data + " ");
-        }
+        BinaryTreePrintZigZag z = new BinaryTreePrintZigZag();
+        z.print(node);
     }
     
 }
