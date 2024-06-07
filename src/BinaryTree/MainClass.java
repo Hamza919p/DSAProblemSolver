@@ -11,8 +11,13 @@ public class MainClass {
         bt.levelOrderTraversal(node);
 
         System.out.println();
-        BinaryTreePrintZigZag z = new BinaryTreePrintZigZag();
-        z.print(node);
+        System.out.println();
+
+        BinaryTreeMirror m = new BinaryTreeMirror();
+        m.make(node);
+
+        bt.levelOrderTraversal(node);
+
     }
     
 }
