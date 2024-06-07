@@ -11,12 +11,9 @@ public class MainClass {
         bt.levelOrderTraversal(node);
 
         System.out.println();
-        System.out.println();
-
-        BinaryTreeMirror m = new BinaryTreeMirror();
-        m.make(node);
-
-        bt.levelOrderTraversal(node);
+        
+        BinaryTreeAllLeavesAreOnSameLevel l = new BinaryTreeAllLeavesAreOnSameLevel();
+        System.out.println(l.check(node, 0));
 
     }
     
