@@ -10,11 +10,6 @@ public class MainClass {
         BinaryTreeNode node = bt.createTree(a);
         bt.levelOrderTraversal(node);
 
-        System.out.println();
-        
-        BinaryTreeAllLeavesAreOnSameLevel l = new BinaryTreeAllLeavesAreOnSameLevel();
-        System.out.println(l.check(node, 0));
-
     }
     
 }
