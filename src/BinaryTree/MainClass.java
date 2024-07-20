@@ -11,6 +11,10 @@ public class MainClass {
         BinaryTreeNode node = bt.createTree(a);
         bt.levelOrderTraversal(node);
 
+        System.out.println();
+        BinaryTreePrintZigZag zigZag = new BinaryTreePrintZigZag();
+        zigZag.print(node);
+
     }
     
 }
