@@ -20,7 +20,7 @@ public class BinaryTreeIsomorphic {
             return false;
         }
 
-        if(t2.data != t2.data) {
+        if(t1.data != t2.data) {
             return false;
         }
 
