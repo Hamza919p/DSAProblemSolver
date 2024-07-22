@@ -1,5 +1,6 @@
 package BinaryTree;
 
+import Arrays.ArraysFindAllPermutation;
 import BinarySearchTree.BSTBinaryTreeToBst;
 
 public class MainClass {
@@ -8,12 +9,8 @@ public class MainClass {
         CustomBinaryTree bt = new CustomBinaryTree();
 
         int a[] = {1,2,4,-1,-1,5,-1,-1,3,-1,6,-1,-1};
-        BinaryTreeNode node = bt.createTree(a);
-        bt.levelOrderTraversal(node);
-
-        System.out.println();
-        BinaryTreePrintZigZag zigZag = new BinaryTreePrintZigZag();
-        zigZag.print(node);
+        ArraysFindAllPermutation find = new ArraysFindAllPermutation();
+        find.permutate();
 
     }
     

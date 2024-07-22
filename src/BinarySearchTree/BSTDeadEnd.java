@@ -18,7 +18,7 @@ class BSTDeadEnd {
     public static boolean solve(BinaryTreeNode root, int min, int max) {
         if (root == null)
             return false;
-        if (min == max)
+        if (min == max) //these are range
             return true;
         //this will tell that left node range is from [infinity, node_value - 1]
         boolean left = solve(root.left, min, root.data - 1);
