@@ -1,4 +1,4 @@
-package Arrays;
+package Arrays.Permutation;
 import java.util.*;
 
 public class ArraysFindAllPermutation {
@@ -11,16 +11,14 @@ public class ArraysFindAllPermutation {
 
 
 
-    public void permutate() {
-        int num[] = {1,2,3}; //who's permutation we need to find
+    public ArrayList<ArrayList<Integer>> permutate(int num[]) {
+         //who's permutation we need to find
         ArrayList<Integer> ds = new ArrayList<>();   //used to store index wise arrays
         ArrayList<ArrayList<Integer>> ans = new ArrayList<>(); // This will contain all permutations
         boolean visited[] = new boolean[num.length];    //This will check if specific index is visited 
         
         recurPermutation(num, ds, ans, visited);
-        for(int i=0; i<ans.size(); i++) {
-            System.out.println(ans.get(i));
-        }
+        return ans;
     }
 
     public void recurPermutation(int nums[], ArrayList<Integer> ds,  ArrayList<ArrayList<Integer>> ans,  boolean visited[]) {
